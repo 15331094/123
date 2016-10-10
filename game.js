@@ -36,11 +36,14 @@ function reachPath (partPath) {
 function crashWall () {
 	var scr = document.getElementById('screen');
 	var s = document.getElementById('sound');
+
 	if (start == true) {
 		scr.innerHTML = "You Lost!";
 	    wall = true;
-	    s.src = "lost.mp3";
+
+	    s.src = "./music/lost.mp3";
 	    s.play();
+	    //bgs.muted = false;
 	}
 	start = false;
 	//alert(wall);
@@ -62,12 +65,12 @@ function judge () {
 		path.seven == true && wall == false && 
 		outSide == false && start == true) {
 		scr.innerHTML = "You Win!";
-	    s.src = "win.mp3";
+	    s.src = "./music/win.mp3";
 	    s.play();
 	}
 	else if (outSide == true && start == true) {
 		scr.innerHTML = "Don't cheat, you should start from the 'S' and move to the 'E' inside the maze!";
-	    s.src = "cheat.mp3";
+	    s.src = "./music/cheat.mp3";
 	    s.play();
 	}
 	start = false;
@@ -114,9 +117,11 @@ function changeVoice () {
 	if (music.muted == false) {
 		music.muted = true;
 		tip.innerHTML = "voice(off)";
+		tip.style.backgroundColor = "red";
 	}
 	else {
 		music.muted = false;
 		tip.innerHTML = "voice(on)";
+		tip.style.backgroundColor = "green";
 	}
 }
