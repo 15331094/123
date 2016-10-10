@@ -39,7 +39,7 @@ function crashWall () {
 	if (start == true) {
 		scr.innerHTML = "You Lost!";
 	    wall = true;
-	    s.src = "./music/lost.mp3";
+	    s.src = "lost.mp3";
 	    s.play();
 	}
 	start = false;
@@ -62,12 +62,12 @@ function judge () {
 		path.seven == true && wall == false && 
 		outSide == false && start == true) {
 		scr.innerHTML = "You Win!";
-	    s.src = "./music/win.mp3";
+	    s.src = "win.mp3";
 	    s.play();
 	}
 	else if (outSide == true && start == true) {
 		scr.innerHTML = "Don't cheat, you should start from the 'S' and move to the 'E' inside the maze!";
-	    s.src = "./music/cheat.mp3";
+	    s.src = "cheat.mp3";
 	    s.play();
 	}
 	start = false;
