@@ -116,12 +116,12 @@ function changeVoice () {
 
 	if (music.muted == false) {
 		music.muted = true;
-		tip.innerHTML = "voice(off)"
+		tip.innerHTML = "voice(off)";
 		tip.style.backgroundColor = "red";
 	}
 	else {
 		music.muted = false;
-		tip.innerHTML = "voice(on)"
+		tip.innerHTML = "voice(on)";
 		tip.style.backgroundColor = "green";
 	}
 }
