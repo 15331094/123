@@ -113,10 +113,10 @@ function changeVoice () {
 
 	if (music.muted == false) {
 		music.muted = true;
-		tip.innerHTML = "voice(off)"
+		tip.innerHTML = "voice(off)";
 	}
 	else {
 		music.muted = false;
-		tip.innerHTML = "voice(on)"
+		tip.innerHTML = "voice(on)";
 	}
 }
