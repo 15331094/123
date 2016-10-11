@@ -30,7 +30,7 @@ function reachPath (partPath) {
 		case 6: path.six = true; break;
 		case 7: path.seven = true; break;
 	}
-		//alert(partPath);
+		//alert(start);
 }
 
 function crashWall () {
@@ -44,8 +44,9 @@ function crashWall () {
 	    s.src = "./music/lost.mp3";
 	    s.play();
 	    //bgs.muted = false;
+	    //start = false;
 	}
-	start = false;
+	
 	//alert(wall);
 }
 
@@ -127,14 +128,17 @@ function changeVoice () {
 }
 
 function crashRed(crash) {
-	switch(crash) {
-		case 1: document.getElementById("one").style.backgroundColor = "red"; break;
-		case 2: document.getElementById("top-two").style.backgroundColor = "red"; break;
-		case 3: document.getElementById("three").style.backgroundColor = "red"; break;
-		case 4: document.getElementById("bottom-two").style.backgroundColor = "red"; 
-		document.getElementById("center-four").style.backgroundColor = "red"; break;
-		case 5: document.getElementById("five").style.backgroundColor = "red"; break;
+	if (start) {
+	    switch(crash) {
+		    case 1: document.getElementById("one").style.backgroundColor = "red"; break;
+		    case 2: document.getElementById("top-two").style.backgroundColor = "red"; break;
+		    case 3: document.getElementById("three").style.backgroundColor = "red"; break;
+		    case 4: document.getElementById("bottom-two").style.backgroundColor = "red"; 
+		    document.getElementById("center-four").style.backgroundColor = "red"; break;
+		    case 5: document.getElementById("five").style.backgroundColor = "red"; break;
+	    }
 	}
+
 }
 
 function resetGray(crash) {
@@ -146,4 +150,5 @@ function resetGray(crash) {
 		document.getElementById("center-four").style.backgroundColor = "gray"; break;
 		case 5: document.getElementById("five").style.backgroundColor = "gray"; break;
 	}
+    start = false;
 }
