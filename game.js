@@ -125,3 +125,25 @@ function changeVoice () {
 		tip.style.backgroundColor = "green";
 	}
 }
+
+function crashRed(crash) {
+	switch(crash) {
+		case 1: document.getElementById("one").style.backgroundColor = "red"; break;
+		case 2: document.getElementById("top-two").style.backgroundColor = "red"; break;
+		case 3: document.getElementById("three").style.backgroundColor = "red"; break;
+		case 4: document.getElementById("bottom-two").style.backgroundColor = "red"; 
+		document.getElementById("center-four").style.backgroundColor = "red"; break;
+		case 5: document.getElementById("five").style.backgroundColor = "red"; break;
+	}
+}
+
+function resetGray(crash) {
+	switch(crash) {
+		case 1: document.getElementById("one").style.backgroundColor = "gray"; break;
+		case 2: document.getElementById("top-two").style.backgroundColor = "gray"; break;
+		case 3: document.getElementById("three").style.backgroundColor = "gray"; break;
+		case 4: document.getElementById("bottom-two").style.backgroundColor = "gray";
+		document.getElementById("center-four").style.backgroundColor = "gray"; break;
+		case 5: document.getElementById("five").style.backgroundColor = "gray"; break;
+	}
+}
