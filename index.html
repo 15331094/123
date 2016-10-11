@@ -17,15 +17,15 @@
 
     <div id="left-part" onmouseover="cheat()"></div>
     <div id="center-part">
-    	<div id="one" onmouseover="crashWall()"></div>
+    	<div id="one" onmouseover="crashWall(); crashRed(1)" onmouseout="resetGray(1)"></div>
     	<div id="two"> 
-    		<div id="top-two" onmouseover="crashWall()"></div>
+    		<div id="top-two" onmouseover="crashWall(); crashRed(2)" onmouseout="resetGray(2)"></div>
     		<div id="center-two" onmouseover="reachPath(4)"></div>
     		<div id="left-two" onmouseover="reachPath(3)"></div>
-    		<div id="bottom-two" onmouseover="crashWall()"></div>
+    		<div id="bottom-two" onmouseover="crashWall(); crashRed(4)" onmouseout="resetGray(4)"></div>
     		<div id="right-two" onmouseover="reachPath(5)"></div>
     	</div>
-    	<div id="three" onmouseover="crashWall()"></div>
+    	<div id="three" onmouseover="crashWall(); crashRed(3)" onmouseout="resetGray(3)"></div>
     	<div id="four">
     		<div id="leftSide-four" onmouseover="reset();reachPath(1)">S</div>
     		<div id="leftPart-four" onmouseover="reachPath(2)"></div>
@@ -33,7 +33,7 @@
     		<div id="rightPart-four" onmouseover="reachPath(6)"></div>
     		<div id="rightSide-four" onmouseover="reachPath(7);judge()" onmouseout="end()">E</div>
     	</div>
-    	<div id="five" onmouseover="crashWall()"></div>
+    	<div id="five" onmouseover="crashWall(); crashRed(5)" onmouseout="resetGray(5)"></div>
     </div>
     <div id="right-part" onmouseover="cheat()"></div>
     <div id="bottom-outside" onmouseover="cheat()">
