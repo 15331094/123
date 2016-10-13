@@ -1,3 +1,10 @@
+#whole-page {
+	width: 1360px;
+	height: 771px;
+	/*background-color: red;*/
+	margin: auto;
+}
+
 #top-outside {
 	/*background-color: yellow;*/
 	width: 100%;
@@ -64,14 +71,14 @@
 #three {
 	width: 30%;
 	height: 280px;
-	/*background-color: black;*/
+	/*background-color: red;*/
 	float: left;
 }
 
 #four {
 	width: 100%;
 	height: 55px;
-	/*background-color: yellow;*/
+	background-color: white;
 	float: left;
 }
 
@@ -119,12 +126,13 @@
 
 #leftSide-four {
 	width: 10%;
-	height: 100%;
+	height: 51px;
 	background-color: green;
 	float: left;
 	font-size: 50px;
 	text-align: center;
-	/*margin-top: 10px;*/
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 #leftPart-four {
@@ -137,7 +145,7 @@
 #center-four {
 	width: 24%;
 	height: 100%;
-	/*background-color: blue;*/
+	background-color: gray;
 	float: left;
 }
 
@@ -150,11 +158,13 @@
 
 #rightSide-four {
 	width: 10%;
-	height: 100%;
+	height: 51px;
 	background-color: purple;
 	float: left;
 	font-size: 50px;
 	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 button {
